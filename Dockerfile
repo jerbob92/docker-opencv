@@ -15,4 +15,6 @@ run     apt-get install -y -q libopencv-dev build-essential cmake git libgtk2.0-
 add	build_opencv.sh	/build_opencv.sh
 run	/bin/sh /build_opencv.sh
 run	rm -rf /build_opencv.sh
-run     apt-get install maven
+run     apt-get -y -q install maven2
+run     apt-get -y -q install libtesseract-dev
+run     wget https://tesseract-ocr.googlecode.com/files/tesseract-ocr-3.02.eng.tar.gz && tar xvfz tesseract-ocr-3.02.eng.tar.gz && mv tesseract-ocr/tessdata /usr/local/share/tessdata && rm tesseract-ocr-3.02.eng.tar.gz && rm -R tesseract-ocr
