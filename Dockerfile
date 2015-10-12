@@ -8,7 +8,6 @@ run	apt-get install -y -q wget curl
 run	apt-get install -y -q build-essential
 run	apt-get install -y -q cmake
 run     apt-get install -y -q python3 python3-dev python3-pip python3-setuptools
-run     python3 --version
 run	pip3 install numpy
 run	apt-get install -y -q libavformat-dev libavcodec-dev libavfilter-dev libswscale-dev
 run	apt-get install -y -q libjpeg-dev libpng-dev libtiff-dev libjasper-dev zlib1g-dev libopenexr-dev libxine-dev libeigen3-dev libtbb-dev
@@ -16,3 +15,4 @@ run     apt-get install -y -q libopencv-dev build-essential cmake git libgtk2.0-
 add	build_opencv.sh	/build_opencv.sh
 run	/bin/sh /build_opencv.sh
 run	rm -rf /build_opencv.sh
+run     apt-get install maven
