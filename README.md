@@ -1,7 +1,9 @@
 docker-opencv
 =============
 
-OpenCV 2.4.11 on Docker, setting up the enviornment of openCV using docker.
+OpenCV 3.0.0 on Docker, setting up the enviornment of openCV using docker.
+
+This build includes java bindings.
 
 First install docker on your computer 
 
@@ -15,12 +17,12 @@ sudo docker build .
 
 and you are ready to go!
 
-you can also pull the docker image from [index.docker.io](http://index.docker.io)
+you can also pull the docker image from [hub.docker.com](https://hub.docker.com)
 
-https://index.docker.io/u/chilijung/docker-opencv/
+https://hub.docker.com/r/jerbob92/opencv/
 
 ```
-sudo docker pull chilijung/docker-opencv
+sudo docker pull jerbob92/opencv
 ```
 
 and your docker is set!
